@@ -72,19 +72,6 @@ if ENV:
         #heroku 
         HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
         HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-        # send .get_id in any channel to forward all your NEW PMs to this group
-        PRIVATE_GROUP_BOT_API_ID = os.environ.get("PRIVATE_GROUP_BOT_API_ID", None)
-        if PRIVATE_GROUP_BOT_API_ID:
-            PRIVATE_GROUP_BOT_API_ID = int(PRIVATE_GROUP_BOT_API_ID)
-        # send .get_id in your private channel to forward all your Private messages
-        
-        TAG_LOGGER = os.environ.get("TAG_LOGGER", None)
-        if TAG_LOGGER: TAG_LOGGER = int(TAG_LOGGER)
-        
-        #Tag LOGGER
-        
-        PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID", None)
-        if PM_LOGGR_BOT_API_ID: PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
         # For Databases
         # can be None in which case plugins requiring
         # DataBase would not work
@@ -137,7 +124,6 @@ if ENV:
         BIO_MSG = os.environ.get("BIO_MSG", None)
         #Lydia API
         LYDIA_API = os.environ.get("LYDIA_API",None)
-        PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
         UPSTREAM_REPO = os.environ.get(
             "UPSTREAM_REPO", "https://github.com/HellBoy-OP/HellBot"
         )
